@@ -26,4 +26,4 @@ I'm currently working in Huawei as a Software Engineer.
     - **Honors**: Second Honor Scholarship, "Challenge Cup" National College Student Curricular Academic Science and Technology Works Competition National First Prize, FLTRP Cup English Public Speaking Contest
 
 #### Research Interests  
-Econometircs, Portfolio Optimization, Asset Allocation, Credit Risk
+Econometircs, Portfolio Optimization, Asset Allocation, Credit Risk, Factor Analysis

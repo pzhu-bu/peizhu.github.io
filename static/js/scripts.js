@@ -60,4 +60,47 @@ window.addEventListener('DOMContentLoaded', event => {
             .catch(error => console.log(error));
     })
 
+     // 简历下载功能
+     const resumeDownload = document.getElementById('resume-download');
+     if (resumeDownload) {
+         resumeDownload.addEventListener('click', function () {
+             this.href ='static/assets/downloads/resume.pdf';
+         });
+     }
+ 
+     // 论文下载功能
+     const publicationsDownload = document.getElementById('publications-download');
+     if (publicationsDownload) {
+         publicationsDownload.addEventListener('click', function () {
+             const paperLinks = document.querySelectorAll('#publications-md a');
+             if (paperLinks.length === 0) {
+                 alert('未找到可下载的论文');
+                 return;
+             }
+             const firstPaperLink = paperLinks[0];
+             if (firstPaperLink) {
+                 window.location.href = firstPaperLink.href;
+             }
+         });
+     }
+ 
+     // 单独论文下载功能
+     fetch(content_dir + 'publications.md')
+       .then(response => response.text())
+       .then(markdown => {
+             const html = marked.parse(markdown);
+             const publicationsMd = document.getElementById('publications-md');
+             publicationsMd.innerHTML = html;
+             const paperLinks = publicationsMd.querySelectorAll('a');
+             paperLinks.forEach(link => {
+                 const href = link.href;
+                 link.href = href;
+                 link.download = link.textContent;
+             });
+         })
+       .then(() => {
+             MathJax.typeset();
+         })
+       .catch(error => console.log(error));
+
 }); 

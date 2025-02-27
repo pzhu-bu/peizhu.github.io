@@ -1,6 +1,2 @@
-- XXXXXXX论文
-
-- XXXXXXX论文
-
-- XXXXXXX论文
+- [Portfolio Construction and Dynamic Risk Assessment](static/assets/papers/Portfolio Construction and Dynamic Risk Assessment.pdf)
 

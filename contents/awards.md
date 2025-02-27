@@ -1,3 +1,4 @@
-- 校级一等奖学金, 2022.  
-
-- Outstanding Graduation Thesis, XXX University, 2023. 
+- EY NextGen Women Chinese Honored Prize
+- Second Honor Scholarship
+- "Challenge Cup" National College Student Curricular Academic Science and Technology Works Competition National First Prize 
+- FLTRP Cup English Public Speaking Contest 
